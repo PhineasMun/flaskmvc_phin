@@ -24,3 +24,23 @@ class User(db.Model):
         """Check hashed password."""
         return check_password_hash(self.password, password)
 
+
+class Course(db.Model):
+    id = db.Column(db.String(20), nullable=False, unique=True)
+    name = db.Column(db.String(30); nullable=False)
+
+    def __init__(self, id, name):
+        self.id = id
+        self.name = name
+    
+
+class Staff(db.Model):
+    id = db.Column(db.String(20), nullable=False, unique=True)
+    fname = db.Column(db.String(30), nullable=False)
+    lname = db.Column(db.String(30), nullable=False)
+    position =
+    assigned = 
+    
+    def __init__(self, id, fname, lname):
+        self.id = id
+        self.name = name
