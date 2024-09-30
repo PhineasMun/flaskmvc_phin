@@ -22,6 +22,7 @@ def init():
 '''
 User Commands
 '''
+#crashout
 
 # Commands can be organized using groups
 
